@@ -1,0 +1,7 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arrow Line -->
+  <line x1="0" y1="150" x2="275" y2="150" stroke="#3F3F3F" stroke-width="50"/>
+  <!-- Arrow Head -->
+  <line x1="137.322" y1="22.678" x2="282.322" y2="167.678" stroke="#3F3F3F" stroke-width="50"/>
+  <line x1="137.322" y1="277.322" x2="282.322" y2="132.322" stroke="#3F3F3F" stroke-width="50"/>
+</svg>

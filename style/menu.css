@@ -1,0 +1,196 @@
+.menu-div {
+                width: 10vw;
+                height: 10vw;
+                background: rgb(63, 63, 63);
+                position: fixed;
+                top: 0px;
+            }
+            .vertical-seperator-line {
+                width: 0.2vw;
+                height: 10vw;
+                position: fixed;
+                background: white;
+                top: 0px;
+            }
+            #hamburger-menu {
+                left: 0vw;
+            }
+            .line {
+                width: 8vw;
+                height: 1vw;
+                position: absolute;
+                background: white;
+                left: 1vw;
+                transition: all 0.25s ease-in-out;
+            }
+            #line-1 {top: 2vw;}
+            #line-2 {top: 4.5vw;}
+            #line-3 {top: 7vw;}
+            .open #line-1 {
+                transform: translate(0, 2.5vw) rotate(-45deg);
+            }
+            .open #line-2 {
+                opacity: 0;
+            }
+            .open #line-3 {
+                transform: translate(0, -2.5vw) rotate(45deg);
+            }
+            .option {
+                width: 100vw;
+                height: 10vw;
+                position: fixed;
+                background: rgb(63, 63, 63);
+                top: 0px;
+                left: 0px;
+            }
+            .seperator-line {
+                width: 100vw;
+                height: 0.2vw;
+                position: absolute;
+                background: white;
+                top: 9.9vw;
+                left: 0px;
+            }
+            #menu-seperator {
+                position: fixed;
+            }
+            .option-image {
+                width: 6vw;
+            }
+            .option-text {
+                font-size: 6vw;
+                margin: 2vw;
+                color: white;
+                text-decoration: none;
+            }
+            #option-1 {transition: all 0.125s linear;}
+            .open #option-1 {top: 10vw;}
+            #option-2 {transition: all 0.25s linear;}
+            #logo {
+                width: 80vw;
+                height: 10vw;
+                background: rgb(63, 63, 63);
+                position: fixed;
+                top: 0px;
+                left: 10vw;
+                text-align: center
+            }
+            #logo-image {
+                height: 10vw;
+            }
+            .open #option-2 {top: 20vw;}
+            #logo-seperator {left: 9.9vw;}
+            #site-cover {
+                width: 100vw;
+                height: 100vh;
+                background: black;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                opacity: 0;
+                transition: all 0.25s ease-in-out;
+                pointer-events: none;
+            }
+            .open #site-cover {
+                opacity: 0.25;
+                pointer-events: auto;
+            }
+            .gradient-shadow {
+                width: 100vw;
+                height: 5vw;
+                position: fixed;
+                top: 10vw;
+                left: 0px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+                pointer-events: none;
+            }
+            #menu-shadow {
+                opacity: 0;
+                transition: all 0.25s linear;
+            }
+            .open #menu-shadow {
+                top: 30vw;
+                opacity: 1;
+            }
+@media screen and (min-aspect-ratio: 8/9) {
+                .mobile-only {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                #menu-spacer {
+                    height: 5vw;
+                }
+                .desktop-only {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                .vertical-seperator-line {
+                    height: 5vw;
+                }
+                #option-1 {
+                    left: 20vw;
+                }
+                #option-1-seperator {
+                    left: 44.9vw;
+                }
+                #option-text-1:hover {
+                    background: rgb(95, 95, 95);
+                }
+                #option-2 {
+                    left: 45vw;
+                }
+                #option-2-seperator {
+                    left: 69.9vw;
+                }
+                #option-text-2:hover {
+                    background: rgb(95, 95, 95);
+                }
+                .option {
+                    width: 25vw;
+                    height: 5vw;
+                    text-align: center;
+                }
+                .option-image {
+                    width: 3vw;
+                }
+                .option-text {
+                    font-size: 2.5vw;
+                    margin-top: 1vw;
+                }
+                #logo {
+                    width: 20vw;
+                    height: 5vw;
+                    left: 0px;
+                }
+                #logo-image {
+                    height: 5vw;
+                }
+                #filler {
+                    width: 30vw;
+                    height: 5vw;
+                    background: rgb(63, 63, 63);
+                    position: fixed;
+                    top: 0px;
+                    left: 70vw;
+                }
+                #de {
+                    width: 4vw;
+                    top: 0.5vw;
+                    right: 0.5vw;
+                }
+                #en {
+                    width: 4vw;
+                    top: 5vw;
+                    right: 0.5vw;
+                }
+                #logo-seperator {
+                    height: 5vw;
+                    left: 19.9vw;
+                }
+                .seperator-line {
+                    top: 4.9vw;
+                }
+                .gradient-shadow {
+                    top: 5vw;
+                }
+            }

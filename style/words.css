@@ -1,0 +1,78 @@
+#hero {
+    height: 10vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/placeholder.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero-text {
+    color: white;
+}
+.parallax {
+    min-height: 20vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.block {
+    text-align: left;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 5vw;
+    opacity: 1;
+}
+#parallax-1 {
+    background-image: url(../assets/placeholder.svg);
+}
+#parallax-2 {
+    background-image: url(../assets/placeholder.svg);
+}
+.button {
+    height: 2.5em;
+    background: rgb(63, 63, 63);
+    display: inline-block;
+    text-align: left;
+    transition: all 0.25s ease-in-out;
+}
+.arrow {
+    width: 2em;
+    margin: 0.25em;
+    position: absolute;
+}
+.arrow-colored {
+    width: 2em;
+
+    margin: 0.25em;
+    position: absolute;
+    opacity: 0;
+}
+.button-text {
+    margin-top: 0.375em;
+    margin-left: 2.5em;
+    margin-right: 0.25em;
+    position: relative;
+    font-size: 1.25em;
+    color: white;
+}
+@media screen and (min-aspect-ratio: 8/9) {
+    body {
+        font-size: 1vw;
+    }
+    .button:hover {
+        background: white;
+    }
+    .button:hover .arrow {
+        opacity: 0;
+    }
+    .button:hover .arrow-colored {
+        opacity: 1;
+    }
+    .button:hover .button-text {
+        color: rgb(63, 63, 63);
+    }}
