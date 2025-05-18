@@ -10,6 +10,8 @@
                 font-size: 2vw;
                 color: white;
                 background: rgb(63, 63, 63);
+                padding: 2vh;
+                padding-left: 2vw;
             }
             h1 {
                 color: green;
@@ -34,7 +36,7 @@
             
             @keyframes slideIn {
                 0% {
-                    transform: translateY(10vw);
+                    transform: translateY(6vw);
                     opacity: 0;
                             }
                 100% {
@@ -46,3 +48,7 @@
                 opacity: 0;
                 pointer-events: none;
             }
+#src {
+    color: white;
+    margin: 2vw;
+}

@@ -129,9 +129,10 @@
                 }
                 #option-1 {
                     left: 20vw;
+                    width: 30vw;
                 }
                 #option-1-seperator {
-                    left: 44.9vw;
+                    left: 49.9vw;
                 }
                 #option-text-1:hover {
                     background: rgb(95, 95, 95);
