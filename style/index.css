@@ -1,5 +1,5 @@
 #hero {
-    height: 10vw;
+    height: calc(100vh - 10vw);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/placeholder.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -12,6 +12,7 @@
 }
 #hero-text {
     color: white;
+    font-size: 5vw;
 }
 .parallax {
     min-height: 50vw;
@@ -27,9 +28,6 @@
 }
 #parallax-1 {
     background-image: url(assets/placeholder.svg);
-}
-#parallax-2 {
-    background-image: url(../assets/placeholder.svg);
 }
 .button {
     height: 2.5em;
@@ -59,6 +57,9 @@
     color: white;
 }
 @media screen and (min-aspect-ratio: 8/9) {
+    #hero {
+        height: calc(100vh - 5vw);
+    }
     body {
         font-size: 1vw;
     }

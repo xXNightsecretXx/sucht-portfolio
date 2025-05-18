@@ -10,65 +10,67 @@
         <link href="style/menu.css" rel="stylesheet">
         <link href="style/index.css" rel="stylesheet">
     </head>
-    <body>
+    <body onresize="checkPlatform()" onload="onLoad()">
         <div id="menu-spacer"></div>
         <div id="hero">
-            <h1 id="hero-text">Welcome to Lonk</h1>
-        </div>
-        <div id="title">
-            <h1 id="h1">Hello world!</h1>
-        </div>
-        <div id="guessing-numbers">
-            <span id="random-numbers">
-                <button id="generator" onclick="getRandomNumber()">Generate number</button>
-                <p id="number-display">(no number)</p>
-            </span>
+            <h1 id="hero-text">SUCHT</h1>
         </div>
         <div class="block">
-            <h2>Lorem ipsum</h2>
-            <h3>dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+            <h2>Genuss</h2>
+            <p>Genuss bedeutet, etwas, z.B. Alkohol, nur zu bestimmten Anlässen und in geringen Mengen einzunehmen</p>
+            <h2>Missbrauch</h2>
+            <p>Von Missbrauch spricht man, wenn ein Stoff benutzt wird, um eine bestimmte Wirkung wie einen Rausch zu erzielen, selbst wenn dies negative Folgen haben kann</p>
+            <h2>Sucht</h2>
+            <p>Aus Missbrauch entwickelt, ist Sucht der Zustand, in dem das Opfer die Kontrolle verliert und einen Zwang verspürt, die Droge zu konsumieren</p>
         </div>
         <div id="parallax-1" class="parallax"></div>
-        <div class="block">
-            <h2>Lorem ipsum</h2>
-            <h3>dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. </p>
-            <a href="#">
-                <div class="button">
-                    <img src="assets/arrow.svg" class="arrow">
-                    <img src="assets/arrow-colored.svg" class="arrow-colored">
-                    <p class="button-text">Lorem ipsum</p>
+        <div class="block" id="fig-1-container">
+            <div id="fig1-text">
+                <h2>Es gibt zwei Arten von Suchten:</h2>
+                <h3>  - stoffgebundene Suchten:</h3>
+                <div id="wiki-1">
+                    <p>   ...sind Suchten, die sich auf einen bestimmten Stoff beziehen</p>
+                    <a href="#">
+                        <div class="button">
+                            <img src="assets/arrow.svg" class="arrow">
+                            <img src="assets/arrow-colored.svg" class="arrow-colored">
+                            <p class="button-text">Beispiele &#40;Wikipedia&#41;</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div id="parallax-2" class="parallax"></div>
-        <div class="block">
-            <h2>Lorem ipsum</h2>
-            <h3>dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-            <a href="#">
-                <div class="button">
-                    <img src="assets/arrow.svg" class="arrow">
-                    <img src="assets/arrow-colored.svg" class="arrow-colored">
-                    <p class="button-text">Lorem ipsum</p>
+                <h3>  - nicht stoffgebundene Suchten:</h3>
+                <div id="wiki-2">
+                    <p>   ...sind Suchten, die an eine Handlung gebunden sind</p>
+                    <a href="#">
+                        <div class="button">
+                            <img src="assets/arrow.svg" class="arrow">
+                            <img src="assets/arrow-colored.svg" class="arrow-colored">
+                            <p class="button-text">Beispiele &#40;Wikipedia&#41;</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
+            <img src="assets/diagram/Figure_1.png" id="fig-1">
         </div>
         <div>
             <div id="menu-options">
                 <div id="site-cover" onclick="toggleMenu()"></div>
                 <div id="menu-shadow" class="gradient-shadow mobile-only"></div>
-                <a href="index.html">
+                <a href="cause-follow.html">
                     <div id="option-2" class="option">
-                        <p id="option-text-2" class="option-text"><img src="assets/cutlery.svg" class="option-image">  a</p>
+                        <div id="option-main-2">
+                            <img src="assets/cause.svg" class="option-image">
+                            <p id="option-text-2" class="option-text"></p>
+                        </div>
                         <div id="seperator-line-2" class="seperator-line"></div>
                     </div>
                 </a>
                 <a href="words.html">
                     <div id="option-1" class="option">
-                        <p id="option-text-1" class="option-text"><img src="assets/chat-bubble.svg" class="option-image">  Begriffe</p>
+                        <div id="option-main-1">
+                            <img src="assets/chat-bubble.svg" class="option-image">
+                            <p id="option-text-1" class="option-text"></p>
+                        </div>
                         <div id="seperator-line-1" class="seperator-line"></div>
                     </div>
                 </a>
@@ -96,20 +98,6 @@
         }
     </script>
     <script>
-        let menuOpen = false;
-        let userLanguage = (navigator.language || navigator.userLanguage).substr(0, 2);
-        let language = localStorage.getItem("language");
-
-        if (!language) {
-            if (["de", "en"].includes(userLanguage)) {
-                localStorage.setItem("language", userLanguage);
-            } else {localStorage.setItem("language", "de");}
-        }
-
-        if (language == "en") {en();}
-        if (language == "de") {de();}
-        if (language) {toggleLanguageMenu();}
-
         let resizeTimer;
         window.addEventListener("resize", () => {
         document.body.classList.add("resize-animation-stopper");
@@ -118,31 +106,43 @@
             document.body.classList.remove("resize-animation-stopper");
         }, 400);
         });
+
         const startAnimation = (entries, observer) => {
             entries.forEach(entry => {
         entry.target.classList.toggle("slide-in", entry.isIntersecting);
             });
         };
+
         const observer = new IntersectionObserver(startAnimation);
-        const options = { root: null, rootMargin: '0px', threshold: 1 }; 
-        const elements = document.querySelectorAll('.block');
+        const options = { root: null, rootMargin: "0px", threshold: 1 }; 
+        const elements = document.querySelectorAll(".block");
         elements.forEach(el => {
             observer.observe(el, options);
         });
 
-        function toggleLanguageMenu() {
-            if (menuOpen) {
-                document.getElementById('language-menu').classList.remove('open');
-                menuOpen = false;
+        function toggleMenu() {
+            document.getElementById("hamburger-menu").classList.toggle("open");
+            document.getElementById("menu-options").classList.toggle("open");
+        }
+        
+        function checkPlatform() {
+            if (window.innerWidth/window.innerHeight > 8/9) {
+                document.getElementById("option-text-1").innerText = "  b)  Suchtbegriffe\n\tSuchtormen";
+                document.getElementById("option-text-2").innerText = "  c) Entstehung\nd) Folgen";
+                console.log("desktop")
             } else {
-                document.getElementById('language-menu').classList.add('open');
-                menuOpen = true;
+                document.getElementById("option-text-1").innerText = "  b) Suchtbegriffe & -formen";
+                document.getElementById("option-text-2").innerText = "  c) Entstehung / d) Folgen";
+                console.log("mobile")
             }
         }
-        function toggleMenu() {
-            document.getElementById("hamburger-menu").classList.toggle('open');
-            document.getElementById('menu-options').classList.toggle('open');
+
+        function onLoad() {
+            checkPlatform();
         }
     </script>
     </body>
+    <footer>
+        <a href="sources.html" id="src">Quellen</a>
+    </footer>
 </html>
