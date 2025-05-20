@@ -12,17 +12,28 @@
     </head>
     <body onresize="checkPlatform()" onload="onLoad()">
         <div id="menu-spacer"></div>
-        <div id="hero">
-            <h1 id="hero-text">SUCHT</h1>
-        </div>
-        <div class="block">
-            <h2>Wusstest du, dass...</h2>
-            <p>...Rauchen schnell über 2000€ im Jahr kosten kann?</p>
-        </div>
+        <main>
+            <div id="hero">
+                <h1 id="hero-text">SUCHT</h1>
+            </div>
+            <div class="block">
+                <h2>Wusstest du, dass...</h2>
+                <p>...Rauchen schnell über 2000€ im Jahr kosten kann?</p>
+            </div>
+        </main>
         <div>
             <div id="menu-options">
                 <div id="site-cover" onclick="toggleMenu()"></div>
                 <div id="menu-shadow" class="gradient-shadow mobile-only"></div>
+                <a href="index.html">
+                    <div id="option-3" class="option">
+                        <div id="option-main-3">
+                            <img src="assets/shield.svg" class="option-image">
+                            <p id="option-text-3" class="option-text"></p>
+                        </div>
+                        <div id="seperator-line-3" class="seperator-line"></div>
+                    </div>
+                </a>
                 <a href="cause-follow.html">
                     <div id="option-2" class="option">
                         <div id="option-main-2">
@@ -41,73 +52,26 @@
                         <div id="seperator-line-1" class="seperator-line"></div>
                     </div>
                 </a>
-                <div id="option-1-seperator" class="vertical-seperator-line"></div>
-                <div id="option-2-seperator" class="vertical-seperator-line"></div>
             </div>
             <div id="hamburger-menu" class="menu-div mobile-only" onclick="toggleMenu()">
                 <div id="line-1" class="line"></div>
                 <div id="line-2" class="line"></div>
                 <div id="line-3" class="line"></div>
             </div>
-            <div id="logo">
-                <a href="index.html"><img id="logo-image" src="assets/logo.png"></a>
-            </div>
+            <a href="index.html">
+                <div id="logo">
+                    <p id="logo-text">SUCHT</p>
+                </div>
+            </a>
             <div id="filler"></div>
+            <div id="option-1-seperator" class="vertical-seperator-line"></div>
+            <div id="option-2-seperator" class="vertical-seperator-line"></div>
+            <div id="option-3-seperator" class="vertical-seperator-line"></div>
             <div class="gradient-shadow"></div>
             <div id="menu-seperator" class="seperator-line"></div>
             <div class="vertical-seperator-line" id="logo-seperator"></div>
         </div>
-    <script>
-        function getRandomNumber() {
-            let number;
-            number = Math.ceil(Math.random() * 10);
-            document.getElementById("number-display").innerHTML = number;
-        }
-    </script>
-    <script>
-        let resizeTimer;
-        window.addEventListener("resize", () => {
-        document.body.classList.add("resize-animation-stopper");
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            document.body.classList.remove("resize-animation-stopper");
-        }, 400);
-        });
-
-        const startAnimation = (entries, observer) => {
-            entries.forEach(entry => {
-        entry.target.classList.toggle("slide-in", entry.isIntersecting);
-            });
-        };
-
-        const observer = new IntersectionObserver(startAnimation);
-        const options = { root: null, rootMargin: "0px", threshold: 1 }; 
-        const elements = document.querySelectorAll(".block");
-        elements.forEach(el => {
-            observer.observe(el, options);
-        });
-
-        function toggleMenu() {
-            document.getElementById("hamburger-menu").classList.toggle("open");
-            document.getElementById("menu-options").classList.toggle("open");
-        }
-        
-        function checkPlatform() {
-            if (window.innerWidth/window.innerHeight > 8/9) {
-                document.getElementById("option-text-1").innerText = "  b)  Suchtbegriffe\n\tSuchtformen";
-                document.getElementById("option-text-2").innerText = "  c) Entstehung\nd) Folgen";
-                console.log("desktop")
-            } else {
-                document.getElementById("option-text-1").innerText = "  b) Suchtbegriffe & -formen";
-                document.getElementById("option-text-2").innerText = "  c) Entstehung / d) Folgen";
-                console.log("mobile")
-            }
-        }
-
-        function onLoad() {
-            checkPlatform();
-        }
-    </script>
+    <script src="scripts/global.js"></script>
     </body>
     <footer>
         <a href="sources.html" id="src">Quellen</a>

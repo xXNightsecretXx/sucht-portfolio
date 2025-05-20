@@ -12,44 +12,56 @@
     </head>
     <body onresize="checkPlatform()" onload="onLoad()">
         <div id="menu-spacer"></div>
-        <div id="hero">
-            <h1 id="hero-text">Gründe für die Suchtentstehung und dessen Folgen</h1>
-        </div>
-        <div class="block" id="fig-2-container">
-            <img src="assets/iceberg.svg" id="fig-2">
-            <div id="fig-2-text">
-                <h1>Das Eisberg-Modell</h1>
-                <p>Das Eisberg-Modell zeigt, dass es viel mehr Ursachen gibt, dass eine Sucht entsteht, als man denkt. Man würde glauben, man wüsste, was der Grund ist, aber in Wahrheit ist es etwas Ungewöhnlicheres, das man nicht erwarten würde.</p>
-                <h2 id="h2-1">Andere Faktoren</h2>
-                <p>Es gibt aber auch andere Faktoren für die Entstehung einer Sucht:
-                    <div class="bulletpoints">
-                        <p>• biologische/genetische Faktoren</p>
-                        <p>• kulturelle Normen</p>
-                        <p>• poltische Einflüsse</p>
-                    </div>
-                </p>
+        <main>
+            <div id="hero">
+                <h1 id="hero-text">Gründe für die Suchtentstehung und dessen Folgen</h1>
             </div>
-        </div>
-        <div id="parallax-1" class="parallax"></div>
-        <div class="block">
-            <h1>Folgen einer Sucht</h1>
-            <p>(Stoffgebundene) Suchten sind nicht du schädlich für die Organe, sondern führen u. a. auch zu</p>
-            <div class="bulletpoints">
-                <p>• Nichtbeachtung von Pflichten & Terminen</p>
-                <p>• Finianzielle Schwierigkeiten</p>
-                <p>• Abwesenheit</p>
-                <p>• Vernachlässigen von sozialen Kontakten</p>
+            <div class="block" id="fig-2-container">
+                <img src="assets/iceberg.svg" id="fig-2">
+                <div id="fig-2-text">
+                    <h1>Das Eisberg-Modell</h1>
+                    <p>Das Eisberg-Modell zeigt, dass es viel mehr Ursachen gibt, dass eine Sucht entsteht, als man denkt. Man würde glauben, man wüsste, was der Grund ist, aber in Wahrheit ist es etwas Ungewöhnlicheres, das man nicht erwarten würde.</p>
+                    <h2 id="h2-1">Andere Faktoren</h2>
+                    <p>Es gibt aber auch andere Faktoren für die Entstehung einer Sucht:
+                        <div class="bulletpoints">
+                            <p>• biologische/genetische Faktoren</p>
+                            <p>• kulturelle Normen</p>
+                            <p>• poltische Einflüsse</p>
+                        </div>
+                    </p>
+                </div>
             </div>
-        </div>
+            <div id="parallax-1" class="parallax"></div>
+            <div class="block">
+                <h1>Folgen einer Sucht</h1>
+                <p>(Stoffgebundene) Suchten sind nicht du schädlich für die Organe, sondern führen u. a. auch zu</p>
+                <div class="bulletpoints">
+                    <p>• Nichtbeachtung von Pflichten & Terminen</p>
+                    <p>• Finianzielle Schwierigkeiten</p>
+                    <p>• Abwesenheit</p>
+                    <p>• Vernachlässigen von sozialen Kontakten</p>
+                </div>
+            </div>
+        </main>
+        
         <div>
             <div id="menu-options">
                 <div id="site-cover" onclick="toggleMenu()"></div>
                 <div id="menu-shadow" class="gradient-shadow mobile-only"></div>
+                <a href="index.html">
+                    <div id="option-3" class="option">
+                        <div id="option-main-3">
+                            <img src="assets/shield.svg" class="option-image">
+                            <p id="option-text-3" class="option-text"></p>
+                        </div>
+                        <div id="seperator-line-3" class="seperator-line"></div>
+                    </div>
+                </a>
                 <a href="cause-follow.html">
                     <div id="option-2" class="option">
                         <div id="option-main-2">
                             <img src="assets/cause.svg" class="option-image">
-                            <p id="option-text-2" class="option-text">  cd&#41;Entstehung/</p>
+                            <p id="option-text-2" class="option-text"></p>
                         </div>
                         <div id="seperator-line-2" class="seperator-line"></div>
                     </div>
@@ -58,78 +70,31 @@
                     <div id="option-1" class="option">
                         <div id="option-main-1">
                             <img src="assets/chat-bubble.svg" class="option-image">
-                            <p id="option-text-1" class="option-text">  b&#41;Suchtbegriffe<br>  Suchtormen</p>
+                            <p id="option-text-1" class="option-text"></p>
                         </div>
                         <div id="seperator-line-1" class="seperator-line"></div>
                     </div>
                 </a>
-                <div id="option-1-seperator" class="vertical-seperator-line"></div>
-                <div id="option-2-seperator" class="vertical-seperator-line"></div>
             </div>
             <div id="hamburger-menu" class="menu-div mobile-only" onclick="toggleMenu()">
                 <div id="line-1" class="line"></div>
                 <div id="line-2" class="line"></div>
                 <div id="line-3" class="line"></div>
             </div>
-            <div id="logo">
-                <a href="index.html"><img id="logo-image" src="assets/logo.png"></a>
-            </div>
+            <a href="index.html">
+                <div id="logo">
+                    <p id="logo-text">SUCHT</p>
+                </div>
+            </a>
             <div id="filler"></div>
+            <div id="option-1-seperator" class="vertical-seperator-line"></div>
+            <div id="option-2-seperator" class="vertical-seperator-line"></div>
+            <div id="option-3-seperator" class="vertical-seperator-line"></div>
             <div class="gradient-shadow"></div>
             <div id="menu-seperator" class="seperator-line"></div>
             <div class="vertical-seperator-line" id="logo-seperator"></div>
         </div>
-    <script>
-        function getRandomNumber() {
-            let number;
-            number = Math.ceil(Math.random() * 10);
-            document.getElementById("number-display").innerHTML = number;
-        }
-    </script>
-    <script>
-        let resizeTimer;
-        window.addEventListener("resize", () => {
-        document.body.classList.add("resize-animation-stopper");
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            document.body.classList.remove("resize-animation-stopper");
-        }, 400);
-        });
-
-        const startAnimation = (entries, observer) => {
-            entries.forEach(entry => {
-        entry.target.classList.toggle("slide-in", entry.isIntersecting);
-            });
-        };
-
-        const observer = new IntersectionObserver(startAnimation);
-        const options = { root: null, rootMargin: "0px", threshold: 1 }; 
-        const elements = document.querySelectorAll(".block");
-        elements.forEach(el => {
-            observer.observe(el, options);
-        });
-
-        function toggleMenu() {
-            document.getElementById("hamburger-menu").classList.toggle("open");
-            document.getElementById("menu-options").classList.toggle("open");
-        }
-        
-        function checkPlatform() {
-            if (window.innerWidth/window.innerHeight > 8/9) {
-                document.getElementById("option-text-1").innerText = "  b)  Suchtbegriffe\n\tSuchtformen";
-                document.getElementById("option-text-2").innerText = "  c) Entstehung\nd) Folgen";
-                console.log("desktop")
-            } else {
-                document.getElementById("option-text-1").innerText = "  b) Suchtbegriffe & -formen";
-                document.getElementById("option-text-2").innerText = "  c) Entstehung / d) Folgen";
-                console.log("mobile")
-            }
-        }
-
-        function onLoad() {
-            checkPlatform();
-        }
-    </script>
+    <script src="scripts/global.js"></script>
     </body>
     <footer>
         <a href="sources.html" id="src">Quellen</a>

@@ -63,9 +63,12 @@
     color: white;
     text-decoration: none;
 }
-#option-1 {transition: all 0.125s linear;}
+#option-1 {transition: all 0.0625s linear;}
 .open #option-1 {top: 10vw;}
-#option-2 {transition: all 0.25s linear;}
+#option-2 {transition: all 0.125s linear;}
+.open #option-2 {top: 20vw;}
+#option-3 {transition: all 0.1875s linear;}
+.open #option-3 {top: 30vw;}
 #option-main-1 {
     display: grid;
     align-items: center; 
@@ -82,6 +85,14 @@
     width: 100vw;
     padding-left: 2vw;
 }
+#option-main-3 {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 10vw 90vw;
+    column-gap: 5px;
+    width: 100vw;
+    padding-left: 2vw;
+}
 #logo {
     width: 90vw;
     height: 10vw;
@@ -89,12 +100,15 @@
     position: fixed;
     top: 0px;
     left: 10vw;
-    text-align: center
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vw;
 }
-#logo-image {
-    height: 10vw;
+#logo-text {
+    font-size: 8vw;
+    color: white;
+    margin: 0;
 }
-.open #option-2 {top: 20vw;}
 #logo-seperator {left: 9.9vw;}
 #site-cover {
     width: 100vw;
@@ -144,21 +158,30 @@
         height: 5vw;
     }
     #option-1 {
-        left: 20vw;
+        left: 15vw;
     }
     #option-1-seperator {
-        left: 44.9vw;
+        left: 39.9vw;
     }
     #option-1:hover {
         background: rgb(95, 95, 95);
     }
     #option-2 {
-        left: 45vw;
+        left: 40vw;
     }
     #option-2-seperator {
-        left: 69.9vw;
+        left: 64.9vw;
     }
     #option-2:hover {
+        background: rgb(95, 95, 95);
+    }
+    #option-3 {
+        left: 65vw;
+    }
+    #option-3-seperator {
+        left: 89.9vw;
+    }
+    #option-3:hover {
         background: rgb(95, 95, 95);
     }
     .option {
@@ -178,20 +201,22 @@
         position: absolute;
     }
     #logo {
-        width: 20vw;
+        width: 15vw;
         height: 5vw;
         left: 0px;
+        background-color: rgb(0, 127, 255);
+        line-height: 5vw;  
     }
-    #logo-image {
-        height: 5vw;
+    #logo-text {
+        font-size: 3vw;
     }
     #filler {
-        width: 30vw;
+        width: 10vw;
         height: 5vw;
         background: rgb(63, 63, 63);
         position: fixed;
         top: 0px;
-        left: 70vw;
+        left: 90vw;
     }
     #de {
         width: 4vw;
@@ -205,7 +230,7 @@
     }
     #logo-seperator {
         height: 5vw;
-        left: 19.9vw;
+        left: 14.9vw;
     }
     .seperator-line {
         top: 4.9vw;
