@@ -8,49 +8,38 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="style/global.css" rel="stylesheet">
         <link href="style/menu.css" rel="stylesheet">
-        <link href="style/words.css" rel="stylesheet">
+        <link href="style/cause-follow.css" rel="stylesheet">
     </head>
     <body onresize="checkPlatform()" onload="onLoad()">
         <div id="menu-spacer"></div>
         <div id="hero">
-            <h1 id="hero-text">Wichtige Suchtegriffe und Suchtformen</h1>
+            <h1 id="hero-text">Gründe für die Suchtentstehung und dessen Folgen</h1>
         </div>
-        <div class="block">
-            <h2>Genuss</h2>
-            <p>Genuss bedeutet, etwas, z.B. Alkohol, nur zu bestimmten Anlässen und in geringen Mengen einzunehmen</p>
-            <h2>Missbrauch</h2>
-            <p>Von Missbrauch spricht man, wenn ein Stoff benutzt wird, um eine bestimmte Wirkung wie einen Rausch zu erzielen, selbst wenn dies negative Folgen haben kann</p>
-            <h2>Sucht</h2>
-            <p>Aus Missbrauch entwickelt, ist Sucht der Zustand, in dem das Opfer die Kontrolle verliert und einen Zwang verspürt, die Droge zu konsumieren</p>
+        <div class="block" id="fig-2-container">
+            <img src="assets/iceberg.svg" id="fig-2">
+            <div id="fig-2-text">
+                <h1>Das Eisberg-Modell</h1>
+                <p>Das Eisberg-Modell zeigt, dass es viel mehr Ursachen gibt, dass eine Sucht entsteht, als man denkt. Man würde glauben, man wüsste, was der Grund ist, aber in Wahrheit ist es etwas Ungewöhnlicheres, das man nicht erwarten würde.</p>
+                <h2 id="h2-1">Andere Faktoren</h2>
+                <p>Es gibt aber auch andere Faktoren für die Entstehung einer Sucht:
+                    <div class="bulletpoints">
+                        <p>• biologische/genetische Faktoren</p>
+                        <p>• kulturelle Normen</p>
+                        <p>• poltische Einflüsse</p>
+                    </div>
+                </p>
+            </div>
         </div>
         <div id="parallax-1" class="parallax"></div>
-        <div class="block" id="fig-1-container">
-            <div id="fig1-text">
-                <h2>Es gibt zwei Arten von Suchten:</h2>
-                <h3>  - stoffgebundene Suchten:</h3>
-                <div id="wiki-1">
-                    <p>   ...sind Suchten, die sich auf einen bestimmten Stoff beziehen</p>
-                    <a href="#">
-                        <div class="button">
-                            <img src="assets/arrow.svg" class="arrow">
-                            <img src="assets/arrow-colored.svg" class="arrow-colored">
-                            <p class="button-text">Beispiele &#40;Wikipedia&#41;</p>
-                        </div>
-                    </a>
-                </div>
-                <h3>  - nicht stoffgebundene Suchten:</h3>
-                <div id="wiki-2">
-                    <p>   ...sind Suchten, die an eine Handlung gebunden sind</p>
-                    <a href="#">
-                        <div class="button">
-                            <img src="assets/arrow.svg" class="arrow">
-                            <img src="assets/arrow-colored.svg" class="arrow-colored">
-                            <p class="button-text">Beispiele &#40;Wikipedia&#41;</p>
-                        </div>
-                    </a>
-                </div>
+        <div class="block">
+            <h1>Folgen einer Sucht</h1>
+            <p>(Stoffgebundene) Suchten sind nicht du schädlich für die Organe, sondern führen u. a. auch zu</p>
+            <div class="bulletpoints">
+                <p>• Nichtbeachtung von Pflichten & Terminen</p>
+                <p>• Finianzielle Schwierigkeiten</p>
+                <p>• Abwesenheit</p>
+                <p>• Vernachlässigen von sozialen Kontakten</p>
             </div>
-            <img src="assets/diagram/Figure_1.png" id="fig-1">
         </div>
         <div>
             <div id="menu-options">
@@ -127,7 +116,7 @@
         
         function checkPlatform() {
             if (window.innerWidth/window.innerHeight > 8/9) {
-                document.getElementById("option-text-1").innerText = "  b)  Suchtbegriffe\n\tSuchtormen";
+                document.getElementById("option-text-1").innerText = "  b)  Suchtbegriffe\n\tSuchtformen";
                 document.getElementById("option-text-2").innerText = "  c) Entstehung\nd) Folgen";
                 console.log("desktop")
             } else {

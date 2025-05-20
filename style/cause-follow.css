@@ -1,6 +1,6 @@
 #hero {
     height: 20vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/stock/speech-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/stock/domino-effect.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
     opacity: 1;
 }
 #parallax-1 {
-    background-image: url(../assets/stock/alcohol-1.jpg);
+    background-image: url(../assets/stock/domino-effect-parallax.jpg);
 }
 .button {
     height: 2.5em;
@@ -57,11 +57,17 @@
     font-size: 1.25em;
     color: white;
 }
-#wiki-1 {
-    margin-left: 2.5vw;
+#fig-2-text {
+    max-width: 87.5vw;
 }
-#wiki-2 {
-    margin-left: 2.5vw;
+#fig-2 {
+    max-width: 87.5vw;
+}
+#h2-1 {
+    padding-top: 10px;
+}
+.bulletpoints {
+    margin-left: 2vw;
 }
 @media screen and (min-aspect-ratio: 8/9) {
     body {
@@ -79,11 +85,14 @@
     .button:hover .button-text {
         color: rgb(63, 63, 63);
     }
-    #fig-1-container {
+    #fig-2 {
+        width: 50vw;
+    }
+    #fig-2-container {
         display: grid;
         align-items: center; 
-        grid-template-columns: 40vw 50vw;
-        column-gap: 5px;
+        grid-template-columns: 50vw 30vw;
+        column-gap: 2vw;
         width: 90vw;
     }
     #hero{
@@ -91,9 +100,5 @@
     }
     .parallax {
         min-height: 25vw;
-    }}
-@media screen and (max-aspect-ratio: 8/9) {
-    #fig-1 {
-        width: 90vw;
     }
 }
