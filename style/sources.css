@@ -20,6 +20,13 @@
     padding-left: 5vw;
     opacity: 1;
 }
+.licenses {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.source {
+    color: black;
+}
 @media screen and (min-aspect-ratio: 8/9) {
     body {
         font-size: 1vw;

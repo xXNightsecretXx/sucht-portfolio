@@ -74,6 +74,9 @@
 #wiki-2 {
     margin-left: 2.5vw;
 }
+.source {
+    color: white;
+}
 @media screen and (min-aspect-ratio: 8/9) {
     body {
         font-size: 1vw;
