@@ -27,6 +27,22 @@
     padding-left: 5vw;
     opacity: 1;
 }
+.flowchart {
+    margin-right: 5vw;
+    padding: 1vw;
+    background-color: rgb(0, 127, 255);
+    color: white;
+}
+.arrow-div {
+    display: flex;
+    justify-content: center;
+    margin-right: 5vw;
+}
+.arrow {
+    width: 2em;
+    margin: 0.5em;
+    rotate: 90deg;
+}
 #parallax-1 {
     background-image: url(../assets/stock/alcohol-1.jpg);
 }
@@ -36,11 +52,6 @@
     display: inline-block;
     text-align: left;
     transition: all 0.25s ease-in-out;
-}
-.arrow {
-    width: 2em;
-    margin: 0.25em;
-    position: absolute;
 }
 .arrow-colored {
     width: 2em;

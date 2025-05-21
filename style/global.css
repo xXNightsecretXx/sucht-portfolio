@@ -35,6 +35,12 @@ h1 {
     animation: 0.5s ease-out 0s 1 slideIn forwards;
 }
 
+.no-mbp {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 @keyframes slideIn {
     0% {
         transform: translateX(15vw);
