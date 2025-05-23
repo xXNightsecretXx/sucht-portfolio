@@ -57,6 +57,9 @@
 #parallax-1 {
     background-image: url(../assets/stock/alcohol-1.jpg);
 }
+#parallax-2 {
+    background-image: url(../assets/stock/alcohol-1.jpg);
+}
 .source {
     color: white;
 }
@@ -81,7 +84,7 @@
     left: 12vw;
     color: #3f7fff;
     rotate: 90deg;
-    cursor: pointer;
+    cursor: help;
 }
 #w2 {
     font-size: 2.5vw;
@@ -90,7 +93,7 @@
     left: 25vw;
     color: #003f7f;
     rotate: 90deg;
-    cursor: pointer;
+    cursor: help;
 }
 #w3 {
     font-size: 3vw;
@@ -124,7 +127,7 @@
     left: 6vw;
     color: #003f7f;
     rotate: 270deg;
-    cursor: pointer;
+    cursor: help;
 }
 #w7 {
     font-size: 3vw;
@@ -149,6 +152,14 @@
     scale: 2;
     cursor: default;
 }
+#fig-4 {
+    margin-left: 10vw;
+    width: 70vw;
+}
+#h1-1 {
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
 @media screen and (min-aspect-ratio: 8/9) {
     body {
         font-size: 1vw;
@@ -164,6 +175,7 @@
         grid-template-columns: 40vw 40vw;
         column-gap: 10vw;
         height: 50vw;
+        padding-top: 0;
     }
     #word-cloud {
         height: 50vw;

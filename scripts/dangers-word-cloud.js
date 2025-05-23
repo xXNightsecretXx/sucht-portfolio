@@ -19,19 +19,19 @@ function show(text, heading) {
 }
 
 let h1 = "Selbstvertrauen<br>‎"
-let h2 = "Nein-Sagen<br>‎"
+let h2 = "Nein-Sagen und verzichten können<br>‎"
 let h3 = "Gefühle wahrnehmen<br>‎"
 let h4 = "Wertehaltung<br>‎"
-let h5 = "&#40;Eigen-&#41; Verantwortung<br>‎"
+let h5 = "Verantwortung und Eigenverantwortung<br>‎"
 let h6 = "Umgang mit Konflikten<br>‎"
 let h7 = "Vielseitige Interessen<br>‎"
 
-let t1 = "Kennt seine eigenen Stärken und Schwächen, achtet sich selbst und ist sich selbst wertvoll (Selbstwertgefühl). Vertraut auf sich und seine Fähigkeiten. Weiß, was ihm gut tut und was nicht."
-let t2 = "Muss nicht alles sofort haben wollen. Kann auch mal verzichten und sich einschränken ohne, dass sein Selbstwertgefühl darunter leidet. Besitzt die Fähigkeit, auch in Situationen mit Gruppendruck „Nein” zu sagen."
+let t1 = "Kennt seine eigenen Stärken und Schwächen, achtet sich selbst und ist sich selbst wertvoll (Selbstwertgefühl). Vertraut auf sich und seine Fähigkeiten. Weiß, was ihm gut tut und was nicht.<br><br>Mit Selbstvertrauen braucht man keine Suchtmittel, um sich besser zu fühlen und Probleme zu vergessen. Man ist weniger beeinflusst von der Meinung anderer und entscheidet eher bewusst und eigenständig."
+let t2 = "Muss nicht alles sofort haben wollen. Kann auch mal verzichten und sich einschränken ohne, dass sein Selbstwertgefühl darunter leidet. Besitzt die Fähigkeit, auch in Situationen mit Gruppendruck „Nein” zu sagen.<br><br>Wenn man „Nein” sagen kann, greift man seltener zu Suchtmitteln aus sozialem Zwang um „dazuzugehören”, da man sich nicht so einfach überreden lässt."
 let t3 = "Kann eigene Gefühle wahrnehmen und ausdrücken. Kann sich mit den eigenen Gefühlen und Gefühlen anderer Menschen auseinandersetzen."
 let t4 = "Hält gesellschaftliche Werte wie Toleranz, Achtung anderer Menschen, Freiheit, Zuverlässigkeit und Hilfsbereitschaft, Wahrheit, Sicherheit und Nachhaltigkeit für wichtig und bedeutsam. Achtet die eigenen Grenzen und der Grenzen anderer Menschen."
 let t5 = "Übernimmt Verantwortung für sich und für andere. Handelt verantwortlich gegen über sich und anderen. Sucht die Schuld nicht immer bei anderen"
-let t6 = "Weicht personlichen, familiaren oder schulischen Konflikten, Belastungen, Enttäuschungen und Problemsituationen nicht dauernd aus, sonder setzt sich mit ihnen auseinander und kann sich daruber mitteilen"
+let t6 = "Weicht personlichen, familiaren oder schulischen Konflikten, Belastungen, Enttäuschungen und Problemsituationen nicht dauernd aus, sonder setzt sich mit ihnen auseinander und kann sich daruber mitteilen<br><br>Viele Menschen greifen zu Suchtmitteln, um Schmerz oder Konflikte zu betäuben. Wenn man Konflikte offen bewältigt, braucht man keine „Flucht“ durch Drogen."
 let t7 = "Hat vielseitige Interessen, die auch in einer sinnvollen, Freude machenden Freizeitgestaltung zum Ausdruck kommen, zum Beispiel im Sportverein oder in der Natur."
 
 document.getElementById("w1").addEventListener("click", function(){show(t1, h1)});
