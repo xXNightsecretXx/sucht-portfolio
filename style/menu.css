@@ -108,6 +108,7 @@
     font-size: 8vw;
     color: white;
     margin: 0;
+    text-shadow: 5px 5px #222;
 }
 #logo-seperator {left: 9.9vw;}
 #site-cover {
@@ -204,7 +205,7 @@
         width: 15vw;
         height: 5vw;
         left: 0px;
-        background-color: rgb(0, 127, 255);
+        background-color: rgb(31, 143, 255);
         line-height: 5vw;  
     }
     #logo-text {

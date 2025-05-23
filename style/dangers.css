@@ -13,6 +13,17 @@
 #hero-text {
     color: white;
 }
+.fadeOut {
+  opacity: 0;
+}
+.fadeIn {
+  opacity: 1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
 .parallax {
     min-height: 40vh;
     background-attachment: fixed;
@@ -30,7 +41,7 @@
 .flowchart {
     margin-right: 5vw;
     padding: 1vw;
-    background-color: rgb(0, 127, 255);
+    background-color: rgb(31, 143, 255);
     color: white;
 }
 .arrow-div {
@@ -46,71 +57,133 @@
 #parallax-1 {
     background-image: url(../assets/stock/alcohol-1.jpg);
 }
-.button {
-    height: 2.5em;
-    background: rgb(63, 63, 63);
-    display: inline-block;
-    text-align: left;
-    transition: all 0.25s ease-in-out;
-}
-.arrow-colored {
-    width: 2em;
-
-    margin: 0.25em;
-    position: absolute;
-    opacity: 0;
-}
-.button-text {
-    margin-top: 0.375em;
-    margin-left: 2.5em;
-    margin-right: 0.25em;
-    position: relative;
-    font-size: 1.25em;
-    color: white;
-}
-#wiki-1 {
-    margin-left: 2.5vw;
-}
-#wiki-2 {
-    margin-left: 2.5vw;
-}
 .source {
     color: white;
+}
+#word-cloud {
+    text-align: center;
+}
+.word {
+    position: relative;
+}
+#w0 {
+    font-size: 3vw;
+    width: 40vw;
+    top: 23.5vw;
+    left: 0;
+    color: black;
+    font-weight: 5;
+}
+#w1 {
+    font-size: 2vw;
+    width: 17vw;
+    top: 3vw;
+    left: 12vw;
+    color: #3f7fff;
+    rotate: 90deg;
+    cursor: pointer;
+}
+#w2 {
+    font-size: 2.5vw;
+    width: 20vw;
+    top: 20vw;
+    left: 25vw;
+    color: #003f7f;
+    rotate: 90deg;
+    cursor: pointer;
+}
+#w3 {
+    font-size: 3vw;
+    width: 20vw;
+    top: 4vw;
+    left: 17vw;
+    color: #3fbfff;
+    cursor: pointer;
+}
+#w4 {
+    font-size: 2.5vw;
+    width: 20vw;
+    top: 18vw;
+    left: 18vw;
+    color: #3f7fff;
+    cursor: pointer;
+}
+#w5 {
+    font-size: 2vw;
+    width: 18vw;
+    top: 10vw;
+    left: 2vw;
+    color: #003f7f;
+    rotate: 90deg;
+    cursor: pointer;
+}
+#w6 {
+    font-size: 2.5vw;
+    width: 20vw;
+    top: -16vw;
+    left: 6vw;
+    color: #003f7f;
+    rotate: 270deg;
+    cursor: pointer;
+}
+#w7 {
+    font-size: 3vw;
+    width: 18vw;
+    top: -3vw;
+    left: 14vw;
+    color: #3fbfff;
+    cursor: pointer;
+}
+#explanation {
+    background-color: white;
+    height: fit-content;
+    padding: 1.5vw;
+    margin-right: 5vw;
+}
+#word-cloud {
+    margin-left: 5vw;
+    margin-top: 25vw;
+    margin-bottom: 25vw;
+    height: 50vw;
+    width: 80vw;
+    scale: 2;
+    cursor: default;
 }
 @media screen and (min-aspect-ratio: 8/9) {
     body {
         font-size: 1vw;
     }
-    .button:hover {
-        background: white;
-    }
-    .button:hover .arrow {
-        opacity: 0;
-    }
-    .button:hover .arrow-colored {
-        opacity: 1;
-    }
-    .button:hover .button-text {
-        color: rgb(63, 63, 63);
-    }
-    #fig-1-container {
-        display: grid;
-        align-items: center; 
-        grid-template-columns: 40vw 50vw;
-        column-gap: 5px;
-        width: 90vw;
-    }
-    #fig-1 {
-        max-width: 50vw;
-    }
     #hero{
         height: 10vw;
     }
     .parallax {
-        min-height: 25vw;
-    }}
+        min-height: 20vw;
+    }
+    #fig-3-container {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        column-gap: 10vw;
+        height: 50vw;
+    }
+    #word-cloud {
+        height: 50vw;
+        width: 40vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        scale: 1;
+    }
+    #explanation {
+        margin-right: 5vw;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
 @media screen and (max-aspect-ratio: 8/9) {
-    #fig-1 {
-        width: 90vw;
+    #inner {
+        position: relative;
+        left: 20%;
     }
 }

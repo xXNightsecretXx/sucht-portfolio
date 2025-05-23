@@ -94,7 +94,7 @@
         height: 10vw;
     }
     .parallax {
-        min-height: 25vw;
+        min-height: 20vw;
     }}
 @media screen and (max-aspect-ratio: 8/9) {
     #fig-1 {
