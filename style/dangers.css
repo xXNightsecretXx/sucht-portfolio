@@ -1,6 +1,6 @@
 #hero {
     height: 20vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/stock/speech-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/stock/danger-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,10 +55,10 @@
     rotate: 90deg;
 }
 #parallax-1 {
-    background-image: url(../assets/stock/alcohol-1.jpg);
+    background-image: url(../assets/stock/alcohol-2.jpg);
 }
 #parallax-2 {
-    background-image: url(../assets/stock/alcohol-1.jpg);
+    background-image: url(../assets/stock/cigarettes.jpg);
 }
 .source {
     color: white;
@@ -153,8 +153,7 @@
     cursor: default;
 }
 #fig-4 {
-    margin-left: 10vw;
-    width: 70vw;
+    width: 90vw;
 }
 #h1-1 {
     margin-left: 5vw;
@@ -176,6 +175,12 @@
         column-gap: 10vw;
         height: 50vw;
         padding-top: 0;
+        padding-bottom: 0;
+    }
+    #fig-4-container {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        column-gap: 10vw;
     }
     #word-cloud {
         height: 50vw;
@@ -191,6 +196,9 @@
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+    }
+    #fig-4 {
+        width: 40vw;
     }
 }
 @media screen and (max-aspect-ratio: 8/9) {

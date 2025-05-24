@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello world!</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="style/global.css" rel="stylesheet">
+        <link href="style/menu.css" rel="stylesheet">
+        <link href="style/sitemap.css" rel="stylesheet">
+    </head>
+    <body onresize="checkPlatform()" onload="onLoad()">
+        <div id="menu-spacer"></div>
+        <main>
+            <div id="hero">
+                <h1 id="hero-text">Inhalt</h1>
+            </div>
+            <div class="block">
+                <h1>Sitemap</h1>
+                <div id="links">
+                    <p><a class="link" href="index.html">Titelblatt</a></p>
+                    <p><a class="link" href="words.html">b&#41; Suchtbegriffe und Suchtformen</a></p>
+                    <p><a class="link" href="cause-follow.html">c&#41; Gründe für Suchtentstehung; d&#41; Die Folgen einer Sucht </a></p>
+                    <p><a class="link" href="dangers.html">e&#41; Suchtmittel des Alltags - Gefahren und Prävention</a></p>
+                    <p><a class="link" href="sources.html">Lizenzen & Quellen</a></p>
+                    <p><a class="link" href="sitemap.html">Sitemap</a></p>
+                </div>
+            </div>
+        </main>
+        <div>
+            <div id="menu-options">
+                <div id="site-cover" onclick="toggleMenu()"></div>
+                <div id="menu-shadow" class="gradient-shadow mobile-only"></div>
+                <a href="dangers.html">
+                    <div id="option-3" class="option">
+                        <div id="option-main-3">
+                            <img src="assets/shield.svg" class="option-image">
+                            <p id="option-text-3" class="option-text"></p>
+                        </div>
+                        <div id="seperator-line-3" class="seperator-line"></div>
+                    </div>
+                </a>
+                <a href="cause-follow.html">
+                    <div id="option-2" class="option">
+                        <div id="option-main-2">
+                            <img src="assets/cause.svg" class="option-image">
+                            <p id="option-text-2" class="option-text"></p>
+                        </div>
+                        <div id="seperator-line-2" class="seperator-line"></div>
+                    </div>
+                </a>
+                <a href="words.html">
+                    <div id="option-1" class="option">
+                        <div id="option-main-1">
+                            <img src="assets/chat-bubble.svg" class="option-image">
+                            <p id="option-text-1" class="option-text"></p>
+                        </div>
+                        <div id="seperator-line-1" class="seperator-line"></div>
+                    </div>
+                </a>
+            </div>
+            <div id="hamburger-menu" class="menu-div mobile-only" onclick="toggleMenu()">
+                <div id="line-1" class="line"></div>
+                <div id="line-2" class="line"></div>
+                <div id="line-3" class="line"></div>
+            </div>
+            <a href="index.html">
+                <div id="logo">
+                    <p id="logo-text">SUCHT</p>
+                </div>
+            </a>
+            <div id="filler"></div>
+            <div id="option-1-seperator" class="vertical-seperator-line"></div>
+            <div id="option-2-seperator" class="vertical-seperator-line"></div>
+            <div id="option-3-seperator" class="vertical-seperator-line"></div>
+            <div class="gradient-shadow"></div>
+            <div id="menu-seperator" class="seperator-line"></div>
+            <div class="vertical-seperator-line" id="logo-seperator"></div>
+        </div>
+    <script src="scripts/global.js"></script>
+    </body>
+    <footer>
+        <p><a href="sources.html" id="src">Quellen</a></p>
+        <p><a href="sitemap.html" id="src">Sitemap</a></p>
+    </footer>
+</html>
