@@ -15,12 +15,14 @@ git clone https://github.com/xXNightsecretXx/sucht-portfolio.git
 Das Repository sollte jetzt heruntergeladen werden
 
 
-### via *Download ZIP*
+### via 7-ZIP oder WINRAR
 Gehen Sie auf [https://github.com/xXNightsecretXx/sucht-portfolio](https://github.com/xXNightsecretXx/sucht-portfolio)
 
 Navigieren Sie zu [<> Code] > [Local] > [Download ZIP]
 
 ![image](https://github.com/user-attachments/assets/9fee7828-4c55-42c8-b8b7-d55a33f24f91)
+
+Öffnen Sie die Datei in 7-ZIP oder WINRAR
 
 ## Portfolio öffnen
 Navigieren Sie zum Ordner, wo das Portfolio gespeichert ist
