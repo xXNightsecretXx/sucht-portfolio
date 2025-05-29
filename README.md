@@ -29,4 +29,4 @@ Navigieren Sie zum Ordner, wo das Portfolio gespeichert ist
 
 Öffnen Sie index.html in einem Browser (Internet Explorer ist nicht vollständig kompatibel, vermeiden) oder HTML-Viewer
 
-![image](https://github.com/user-attachments/assets/b3360c53-ddc7-4b8d-9b7f-95154565d3d9)
+![image](https://github.com/user-attachments/assets/5b57427e-be9b-4108-b45a-f018a9a8d8ea)
