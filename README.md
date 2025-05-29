@@ -25,7 +25,7 @@ Navigieren Sie zu [<> Code] > [Local] > [Download ZIP]
 Öffnen Sie die Datei in 7-ZIP oder WINRAR
 
 ## Portfolio öffnen
-Navigieren Sie zum Ordner, wo das Portfolio gespeichert ist
+Navigieren Sie im Explorer oder 7-ZIP/WINRAR zum Ordner, wo das Portfolio gespeichert ist
 
 Öffnen Sie index.html in einem Browser (Internet Explorer ist nicht vollständig kompatibel, vermeiden) oder HTML-Viewer
 
